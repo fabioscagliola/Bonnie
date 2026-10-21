@@ -1,6 +1,8 @@
 # Bonnie
 
-A Raspberry Pi web API for displaying messages on LED matrices
+A Raspberry Pi web app for displaying messages on LED matrices
+
+![](frontend/assets/logo.150.png)
 
 Years ago, I bought four P5 RGB LED matrix panels (64 × 32 pixels each, 5 mm pixel pitch, 1/16 scan), forming a 256 × 32-pixel display approximately 128 cm wide.
 
@@ -77,7 +79,7 @@ python3 -m venv .venv
 And these are the equivalent `curl` requests for the two examples above. Static text.
 
 ```
-curl 'http://localhost:65535/text-scroller' \
+curl 'http://192.168.1.80:65535/text-scroller' \
 --header 'Content-Type: application/json' \
 --data '{"text": "Hi! Bonnie here. ♥♪", "disable_scrolling": true, "color": "255,0,255"}'
 ```
@@ -85,8 +87,23 @@ curl 'http://localhost:65535/text-scroller' \
 And scrolling text.
 
 ```
-curl 'http://localhost:65535/text-scroller' \
+curl 'http://192.168.1.80:65535/text-scroller' \
 --header 'Content-Type: application/json' \
 --data '{"text": "I must not fear. Fear is the mind-killer. Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past I will turn the inner eye to see its path. Where the fear has gone there will be nothing. Only I will remain. — Frank Herbert, Dune"}'
 ```
+
+## Frontend
+
+I eventually decided to add a simple frontend using Streamlit, making it easier to interact with Bonnie without having to send HTTP requests manually.
+
+Again, for future reference, here's how I run it on the Pi.
+
+```bash
+cd ~/Documents/GitHub/fabioscagliola/Bonnie/frontend
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/streamlit run bonnie.py
+```
+
+I can now open http://192.168.1.80:8501 from any device on my local network and tell Bonnie what to display.
 

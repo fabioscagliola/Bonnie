@@ -74,3 +74,13 @@ def text_scroller(incoming: Incoming) -> fastapi.Response:
 
     return fastapi.Response(status_code=200)
 
+
+@bonnie.post("/clear")
+def clear() -> fastapi.Response:
+    global proc
+
+    with lock:
+        stop()
+
+    return fastapi.Response(status_code=200)
+

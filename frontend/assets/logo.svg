@@ -113,7 +113,7 @@
     <circle cx="100" cy="800" r="34" fill="#000000" />
   </g>
   <g id="row9">
-    <circle cx="1200" cy="900" r="34" fill="#ff00ff" />
+    <circle cx="1200" cy="900" r="34" fill="#000000" />
     <circle cx="1100" cy="900" r="34" fill="#ff00ff" />
     <circle cx="1000" cy="900" r="34" fill="#ff00ff" />
     <circle cx="900" cy="900" r="34" fill="#ff00ff" />
@@ -128,7 +128,7 @@
   </g>
   <g id="row10">
     <circle cx="1200" cy="1000" r="34" fill="#000000" />
-    <circle cx="1100" cy="1000" r="34" fill="#ff00ff" />
+    <circle cx="1100" cy="1000" r="34" fill="#000000" />
     <circle cx="1000" cy="1000" r="34" fill="#ff00ff" />
     <circle cx="900" cy="1000" r="34" fill="#ff00ff" />
     <circle cx="800" cy="1000" r="34" fill="#ff00ff" />
@@ -143,7 +143,7 @@
   <g id="row11">
     <circle cx="1200" cy="1100" r="34" fill="#000000" />
     <circle cx="1100" cy="1100" r="34" fill="#000000" />
-    <circle cx="1000" cy="1100" r="34" fill="#ff00ff" />
+    <circle cx="1000" cy="1100" r="34" fill="#000000" />
     <circle cx="900" cy="1100" r="34" fill="#ff00ff" />
     <circle cx="800" cy="1100" r="34" fill="#000000" />
     <circle cx="700" cy="1100" r="34" fill="#000000" />
